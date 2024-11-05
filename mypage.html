@@ -1,44 +1,111 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html lang="ko">
 <head>
-    <title>My Homepage</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyulin Homepage</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;   
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #e7f3ff; /* 연한 파란색 배경 */
+    }
+    header {
+        background-color: #0056b3; /* 짙은 파란색 */
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    h1, h2, h3 {
+        color: #003366; /* 어두운 파란색 */
+    }
+    nav, section {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        margin: 20px 0;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #007BFF; /* 중간 파란색 */
+        color: white;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: #007BFF; /* 중간 파란색 */
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+        background-color: #0056b3; /* 짙은 파란색 */
+    }
+    .gif-container {
+        text-align: center;
+        margin: 20px 0;
+    }
+</style>
 </head>
 <body>
-    <h2>
-        Gyulin Homepage</h2>
-        <hr/>
-    <p>
-        <img src="https://cdn-icons-png.flaticon.com/512/97/97777.png" width="50" height="50" />
-        <strong>데이터분석</strong>을 잘하고 싶은 <b>1인</b> 입니다. <a href="https://github.com/gyulin99" target="_self">Github</a>
-        <hr/>
-    </p>
-    <h3><img src="https://i.namu.wiki/i/mxMv5lNX8m8lUwu7yTjN6eNZh8JVuI6a_chEyMRc4V9oECkhVIl7OiPiGIOllv14uDVNuwRPVco8abCPe5xOiQ.svg" width="100" height="50"> 학습해야 하는 과목 </li></h3>
-    <ol>
-        <li>데이터처리 </li>
-        <li>서비스프로그래밍 </li>
-        <li>데이터처리플랫폼 </li>
-        <li>빅데이터모델 </li>
-    </ol>
-    <hr/>
-    <h3>다음 학기 시간표</h3>
+    <header>
+        <p>
+            <img src="https://cdn-icons-png.flaticon.com/512/97/97777.png" width="50" height="50" alt="Profile icon" />
+            <strong>데이터분석</strong>을 잘하고 싶은 <b>이규린</b> 이라고 합니다.
+        </p>
+        <a href="https://github.com/gyulin99" target="_blank" class="cta-button">Github 방문하기</a>
+    </header>
 
-<table border="1">
-<caption>
-2025 시간표
-</caption>
-<tr>
-<th>&nbsp;</th><th>월요일</th> <th>화요일</th><th>수요일</th><th>목요일</th><th>금요일</th>
-</tr>
-<tr>
-<td>1교시</td><td>데이터처리</td> <td>데이터처리</td> <td>데이터처리</td> <td>데이터처리</td> <td>데이터처리</td>
-</tr>
-<tr>
-<td>2교시</td><td>서비스프로그래밍</td> <td>서비스프로그래밍</td> <td>서비스프로그래밍</td> <td>서비스프로그래밍</td> <td>서비스프로그래밍</td>
-</tr>
-<td>3교시</td><td>데이터처리플랫폼</td> <td>데이터처리플랫폼</td> <td>데이터처리플랫폼</td> <td>데이터처리플랫폼</td> <td>데이터처리플랫폼</td>
-</tr>
-<td>4교시</td><td>빅데이터모델</td> <td>빅데이터모델</td> <td>빅데이터모델</td> <td>빅데이터모델</td> <td>빅데이터모델</td>
-</tr>
-</table> 
+    <section>
+        <h1>자격증</h1>
+        <ul>
+            <li>빅데이터분석기사</li>
+            <li>..</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>활용 Tool</h1>
+        <ul>
+            <li>Python</li>
+            <li>Matlab</li>
+            <li>..</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>학습내용</h1>
+        <ul>
+            <li>데이터처리</li>
+            <p>데이터 처리 패키지를 활용한 통계 분석</p>
+            <li>서비스프로그래밍</li>
+            <p>웹 데이터 수집 및 다이나믹 시각화</p>
+            <li>데이터처리플랫폼</li>
+            <p>대용량 데이터 분산 컴퓨팅(하둡,스파크)</p>
+            <li>빅데이터모델</li>
+            <p>지도/비지도 학습 알고리즘</p>
+            <li>..</li>
+        </ul>
+    </section>
+
 </body>
 </html>
